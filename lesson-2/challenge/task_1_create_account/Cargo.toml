@@ -1,0 +1,10 @@
+[package]
+name = "task_1_create_account"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow.workspace = true
+solana-client.workspace = true
+solana-sdk.workspace = true
+util.workspace = true
