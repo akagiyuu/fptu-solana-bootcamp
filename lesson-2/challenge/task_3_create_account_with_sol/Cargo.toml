@@ -1,0 +1,10 @@
+[package]
+name = "task_3_create_account_with_sol"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow.workspace = true
+solana-client.workspace = true
+solana-sdk.workspace = true
+util.workspace = true
