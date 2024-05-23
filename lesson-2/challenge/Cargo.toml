@@ -1,0 +1,9 @@
+[workspace]
+resolver = "2"
+members = [ "task_1_create_account", "task_2_transfer", "task_3_create_account_with_sol", "task_4_create_account_and_transfer","util"]
+
+[workspace.dependencies]
+anyhow = "1.0.86"
+solana-client = "1.18.14"
+solana-sdk = "1.18.14"
+util = { path = "./util" }
