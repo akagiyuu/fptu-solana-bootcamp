@@ -1,0 +1,13 @@
+[package]
+name = "task_1_token"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow.workspace = true
+mpl-token-metadata.workspace = true
+solana-client.workspace = true
+solana-sdk.workspace = true
+spl-associated-token-account.workspace = true
+spl-token.workspace = true
+util.workspace = true

@@ -1,0 +1,12 @@
+[workspace]
+resolver = "2"
+members = [ "task_1_token", "task_2_nft", "util" ]
+
+[workspace.dependencies]
+anyhow = "1.0.86"
+solana-client = "1.18.14"
+solana-sdk = "1.18.14"
+spl-token = "4.0.0"
+spl-associated-token-account = "3.0.2"
+mpl-token-metadata = "4.1.2"
+util = { path = "./util" }
