@@ -1,0 +1,16 @@
+{
+  "name": "Solana bootcamp logo",
+  "symbol": "SBL",
+  "description": "Solana bootcamp logo",
+  "image": "https://github.com/trankhacvy/fptu-solana-bootcamp/blob/main/assets/logo.png?raw=true",
+  "attributes": [
+    {
+      "trait_type": "place",
+      "value": "fptu"
+    },
+    {
+      "trait_type": "content",
+      "value": "blockchain"
+    }
+  ]
+}
