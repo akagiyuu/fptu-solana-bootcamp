@@ -40,7 +40,7 @@ describe("user_info_program", () => {
         console.log(get_explorer_url(transaction));
     });
 
-    it("Name should be initialized", async () => {
+    it("Name should be updated", async () => {
         const new_name = "New Test";
         const transaction = await program.methods.update(new_name, null)
             .accounts({
@@ -76,7 +76,7 @@ describe("user_info_program", () => {
         }
     })
 
-    it("Age should be initialized", async () => {
+    it("Age should be updated", async () => {
         const new_age = 10;
         const transaction = await program.methods.update(null, new_age)
             .accounts({
