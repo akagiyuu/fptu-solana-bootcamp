@@ -26,7 +26,6 @@ describe("user_info_program", () => {
             })
             .signers([user_data_account_keys])
             .rpc();
-        console.log(get_explorer_url(transaction));
         const user_data_account = await program.account.userData.fetch(
             user_data_account_keys.publicKey
         );
@@ -38,6 +37,7 @@ describe("user_info_program", () => {
             user_data_account.age == age,
             `Expected age to be ${age}`
         );
+        console.log(get_explorer_url(transaction));
     });
 
     it("Name should be initialized", async () => {
@@ -47,7 +47,6 @@ describe("user_info_program", () => {
                 userData: user_data_account_keys.publicKey
             })
             .rpc();
-        console.log(get_explorer_url(transaction));
         const user_data_account = await program.account.userData.fetch(
             user_data_account_keys.publicKey
         );
@@ -55,6 +54,7 @@ describe("user_info_program", () => {
             user_data_account.name == new_name,
             `Expected name to be ${new_name}`
         );
+        console.log(get_explorer_url(transaction));
     })
 
     it("Name should cause error", async () => {
@@ -83,7 +83,6 @@ describe("user_info_program", () => {
                 userData: user_data_account_keys.publicKey
             })
             .rpc();
-        console.log(get_explorer_url(transaction));
         const user_data_account = await program.account.userData.fetch(
             user_data_account_keys.publicKey
         );
@@ -91,5 +90,6 @@ describe("user_info_program", () => {
             user_data_account.age == new_age,
             `Expected name to be ${new_age}`
         );
+        console.log(get_explorer_url(transaction));
     })
 });
